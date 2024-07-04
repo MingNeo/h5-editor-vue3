@@ -5,3 +5,6 @@ export const ACCESS_TOKEN_SAVE_KEY = 'accessToken'
 export const REQUEST_ACCESS_TOKEN_KEY = 'Authorization'
 
 export const DISABLED_PERMISSSION = false
+
+// 画布宽度
+export const PAGE_CANVAS_WIDTH = 414

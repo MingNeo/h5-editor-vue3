@@ -300,6 +300,13 @@ function getPlaceholder(type: string, label?: string) {
               @update:model-value="(val) => onFieldChange(item, val)" v-on="item.on || {}"
             />
           </template>
+          <template v-else-if="item.type === 'colorPicker'">
+            <el-color-picker
+              :model-value="formState[item.name]"
+              v-bind="item.fieldProps"
+              @update:model-value="(val: any) => onFieldChange(item, val)" v-on="item.on || {}"
+            />
+          </template>
           <template v-else-if="item.type === 'upload'">
             <common-upload
               :files="formState[item.name]"

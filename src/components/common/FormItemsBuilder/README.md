@@ -19,7 +19,7 @@ meta:
 ## 使用方法
 
 基础使用
-FormItemsBuilder只生成fields，需自己套用a-form
+FormItemsBuilder只生成fields，需自己套用el-form
 ```html
 <script lang="ts" setup>
 const data = ref({
@@ -149,7 +149,7 @@ const fields2 = ref([{
     <FormItemsBuilder v-model="data.users[0]" :name-prefix="['users', 0]" :column="3" :fields="fields" />
     <h3>哈哈哈哈哈哈</h3>
     <FormItemsBuilder v-model="data.users[1]" :name-prefix="['users', 1]" :column="3" :fields="fields" />
-    <el-button type="primary" html-type="submit">
+    <el-button type="primary" @click="submit">
       submit
     </el-button>
   </el-form>

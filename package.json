@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "@icon-park/vue-next": "^1.4.2",
+    "@imengyu/vue3-context-menu": "^1.4.1",
     "@storybook/channel-postmessage": "^7.6.17",
     "@types/uuid": "^9.0.8",
     "@unocss/reset": "^0.59.0",
@@ -48,7 +49,8 @@
     "vue-demi": "^0.14.7",
     "vue-i18n": "^9.11.0",
     "vue-matomo": "^4.2.0",
-    "vue-router": "^4.3.0"
+    "vue-router": "^4.3.0",
+    "vue3-moveable": "^0.28.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.12.2",

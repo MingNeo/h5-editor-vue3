@@ -46,7 +46,7 @@ export default defineConfig(({ command }) => ({
     }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
-    Layouts({ defaultLayout: 'basic' }),
+    Layouts({ defaultLayout: 'blank' }),
 
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({

@@ -54,3 +54,7 @@ html.dark {
   overflow-y: auto;
   padding: 20px;
 }
+
+.mx-menu-ghost-host.fullscreen {
+  z-index: 3000 !important;
+}
