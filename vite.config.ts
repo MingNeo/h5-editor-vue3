@@ -26,6 +26,7 @@ function IconParkResolver(): ComponentResolver {
 }
 
 export default defineConfig(({ command }) => ({
+  base: './',
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
