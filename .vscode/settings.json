@@ -83,5 +83,8 @@
     "toml",
     "gql",
     "graphql"
+  ],
+  "iconify.customCollectionJsonPaths": [
+    "./src/assets/iconify.json"
   ]
 }

@@ -26,8 +26,12 @@
   },
   "dependencies": {
     "@icon-park/vue-next": "^1.4.2",
+    "@iconify/vue": "^4.1.2",
     "@imengyu/vue3-context-menu": "^1.4.1",
     "@storybook/channel-postmessage": "^7.6.17",
+    "@tiptap/pm": "^2.4.0",
+    "@tiptap/starter-kit": "^2.4.0",
+    "@tiptap/vue-3": "^2.4.0",
     "@types/uuid": "^9.0.8",
     "@unocss/reset": "^0.59.0",
     "@vueuse/core": "^10.9.0",

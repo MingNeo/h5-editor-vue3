@@ -1,7 +1,7 @@
 <script setup>
-import FormItemsBuilder from '~/components/common/FormItemsBuilder/index.vue'
-import CountrySelectorField from '~/components/common/FormItemsBuilder/demos/CountrySelectorField.vue'
-import useSteps from '~/composables/useSteps'
+import FormItemsBuilder from '@/components/common/FormItemsBuilder/index.vue'
+import CountrySelectorField from '@/components/common/FormItemsBuilder/demos/CountrySelectorField.vue'
+import useSteps from '@/composables/useSteps'
 
 const formRef = ref()
 

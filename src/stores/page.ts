@@ -2,9 +2,9 @@ import { acceptHMRUpdate, defineStore } from 'pinia'
 // import {
 //   fetchPageData,
 //   savePageData,
-// } from '~/api/page'
-import type { PageData } from '~/types'
-import { getComponentDefaultInfo } from '~/pages/design/helper'
+// } from '@/api/page'
+import type { PageData } from '@/types'
+import { getComponentDefaultInfo } from '@/pages/design/helper'
 
 export const usePageStore = defineStore('page', () => {
   const pageData = ref<PageData>({ pageInfo: { style: {}, option: {} }, elements: {} })

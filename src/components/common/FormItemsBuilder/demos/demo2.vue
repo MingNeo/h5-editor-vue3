@@ -1,6 +1,6 @@
 <script setup>
-import FormItemsBuilder from '~/components/common/FormItemsBuilder/index.vue'
-import CountrySelectorField from '~/components/common/FormItemsBuilder/demos/CountrySelectorField.vue'
+import FormItemsBuilder from '@/components/common/FormItemsBuilder/index.vue'
+import CountrySelectorField from '@/components/common/FormItemsBuilder/demos/CountrySelectorField.vue'
 
 const data = ref({
   users: [{

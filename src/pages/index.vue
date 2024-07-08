@@ -10,7 +10,7 @@ meta:
         welcome
       </h1>
       <a href="/design/designPage">可视化编辑器</a>
-      <!-- <a href="/textEditor">文本编辑器</a> -->
+      <a href="/textEditor">文本编辑器</a>
     </div>
   </div>
 </template>

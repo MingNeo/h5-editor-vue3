@@ -2,7 +2,7 @@
 import ContextMenu from '@imengyu/vue3-context-menu'
 import Moveable from 'vue3-moveable'
 import '@imengyu/vue3-context-menu/lib/vue3-context-menu.css'
-import type { ElementInfo } from '~/types'
+import type { ElementInfo } from '@/types'
 
 const props = defineProps<{
   id: string

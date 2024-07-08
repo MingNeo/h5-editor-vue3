@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import BaseComponent from '../designComponents/baseComponent/index.vue'
-import { PAGE_CANVAS_WIDTH } from '~/config/constants'
+import { PAGE_CANVAS_HEIGHT, PAGE_CANVAS_WIDTH } from '@/config/constants'
 
 const props = defineProps<{
   isDesign: boolean
@@ -10,7 +10,7 @@ const props = defineProps<{
 const pageStore = usePageStore()
 
 const pageStyle = computed(() => {
-  const { width: pageWidth = PAGE_CANVAS_WIDTH, height: pageHeight = 500 } = pageStore.pageData.pageInfo?.style || {}
+  const { width: pageWidth = PAGE_CANVAS_WIDTH, height: pageHeight = PAGE_CANVAS_HEIGHT } = pageStore.pageData.pageInfo?.style || {}
 
   const transStyle: Record<string, any> = {
     ...pageStore.pageData.pageInfo?.style,

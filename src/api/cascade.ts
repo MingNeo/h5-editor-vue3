@@ -1,4 +1,4 @@
-import request from '~/utils/request'
+import request from '@/utils/request'
 
 export const getCascadeList = (parentId?: string | number) => {
   return request('/api/web/cascade/list', {

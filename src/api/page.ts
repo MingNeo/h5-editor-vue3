@@ -1,5 +1,5 @@
-import type { PageData } from '~/types'
-import request from '~/utils/request'
+import type { PageData } from '@/types'
+import request from '@/utils/request'
 
 export async function fetchPageData(_pageId: string | number): Promise<PageData> {
   // return request('/api/web/page-data', {

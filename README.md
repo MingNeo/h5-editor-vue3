@@ -1,19 +1,4 @@
-# Vue3 基础工程
-本工程在通用基础工程基础上，内置了常用功能及基础组件，方便快速开发应用。
-
-## 特性
-
-- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [esbuild](https://github.com/evanw/esbuild)
-- 🗂 [基于文件的路由](./src/pages)
-- 📦 [组件自动化加载](./src/components)
-- 🍍 [使用 Pinia 的状态管理](https://pinia.vuejs.org)
-- 📑 [布局系统](./src/layouts)
-- 🎨 [UnoCSS](https://github.com/unocss/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎
-- 🌍 [I18n 国际化](./locales)
-- 📥 [API 自动加载](https://github.com/antfu/unplugin-auto-import) - Composition 等API 自动引入
-- 🖨 使用 [vite-ssg](https://github.com/antfu/vite-ssg) 进行服务端生成 (SSG), 需手工开启
-- ⚙️ 使用 [Vitest](https://github.com/vitest-dev/vitest) 进行单元测试, [Cypress](https://cypress.io/) 进行 E2E 测试
-- ⚙️ 使用 [Storybook](https://storybook.js.org/) 进行可视化调试与预览
+# Vue3 H5 Design
 
 <br>
 
@@ -44,7 +29,7 @@ pnpm build
 
 ### 路径别名
 
-`~/`被别名为`./src/`文件夹。
+`@/`被别名为`./src/`文件夹。
 
 ### 自动import
 
@@ -108,22 +93,15 @@ hasAuth('demoList:del')
 ```
 
 ### 图标
-
-使用IconPark官方图标：直接使用IconPark开头跟上对应图标，无需手工引入
-如使用buy图标
-
+使用 [@iconify/vue](https://iconify.design/docs/icon-components/vue/)
 ```vue
-<IconParkBuy />
-
-<icon-park-buy />
+<icon icon="icon-park-outline:back" />
 ```
 
-使用项目图标
+如使用自定义图标，可在src/assets/iconify.json中配置。
+如上传至iconfont，并配合(tampermonkey-iconfont-iconify油猴插件)[https://github.com/yee94/tampermonkey-iconfont-iconify]插件直接下载iconify.json文件覆盖即可。
 
 ```vue
-<common-icon type="arrow-left" size="16" />
-```
-
 ### mock
 
 mock目录下的文件将自动生成mock，当本地开发且未转发时可自动使用mock

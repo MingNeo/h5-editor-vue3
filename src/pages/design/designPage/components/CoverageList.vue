@@ -39,9 +39,9 @@ function handleLock(id: string | number) {
         {{ item.lock }} {{ getCoverageName(item.type) }} {{ item.id }}
       </div>
       <div class="icons flex gap-[4px]">
-        <icon-park-delete class="hidden group-hover:block" theme="outline" size="20" fill="#333" @click.stop="handleRemove(item.id)" />
-        <icon-park-lock v-if="!item.option?.lock" class="hidden group-hover:block" theme="outline" size="20" fill="#333" @click.stop="handleLock(item.id)" />
-        <icon-park-unlock v-else class="hidden group-hover:block" theme="outline" size="20" fill="#333" @click.stop="handleLock(item.id)" />
+        <icon icon="icon-park-outline:delete" class="text-[20px] text-[#333] hidden group-hover:block" @click.stop="handleRemove(item.id)" />
+        <icon v-if="!item.option?.lock" icon="icon-park-outline:lock" class="text-[20px] hidden group-hover:block" @click.stop="handleLock(item.id)" />
+        <icon v-else icon="icon-park-outline:unlock" class="text-[20px] hidden group-hover:block" @click.stop="handleLock(item.id)" />
       </div>
     </li>
   </ul>

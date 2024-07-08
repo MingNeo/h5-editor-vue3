@@ -22,13 +22,13 @@ function handleRemove(id: string | number) {
     <el-tabs v-model="activeName" tab-position="left" class="h-full">
       <el-tab-pane label="素材" name="material">
         <template #label>
-          <icon-park-material theme="outline" size="24" fill="#333" />
+          <icon icon="icon-park-outline:material" class="text-6 text-[#333]" />
         </template>
         <Material @add="handleAdd" />
       </el-tab-pane>
       <el-tab-pane label="图层" name="coverage">
         <template #label>
-          <icon-park-layers theme="outline" size="24" fill="#333" />
+          <icon icon="icon-park-outline:layers" class="text-6 text-[#333]" />
         </template>
         <CoverageList :elements="pageStore.pageData.elements" @select="pageStore.selectElement" @remove="handleRemove" @toggle-lock="pageStore.toggleLockComponent" />
       </el-tab-pane>

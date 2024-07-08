@@ -27,8 +27,8 @@ onMounted(() => {
 <template>
   <div class="design-page-wrapper w-full h-[100vh] flex flex-col">
     <div class="control-bar w-full flex gap-[8px] bg-white shadow z-20 py-1 px-3">
-      <icon-park-back class="cursor-pointer" :class="canUndo ? 'color-black' : 'color-[#eee]'" theme="outline" size="24" @click="canUndo && undo()" />
-      <icon-park-next class="cursor-pointer" :class="canRedo ? 'color-black' : 'color-[#eee]'" theme="outline" size="24" @click="canRedo && redo()" />
+      <icon icon="icon-park-outline:back" class="cursor-pointer text-[24px]" :class="canUndo ? 'color-black' : 'color-[#eee]'" @click="canUndo && undo()" />
+      <icon icon="icon-park-outline:next" class="cursor-pointer text-[24px]" :class="canRedo ? 'color-black' : 'color-[#eee]'" @click="canRedo && redo()" />
       <el-button class="self-end" @click="pageStore.savePage">
         保存
       </el-button>

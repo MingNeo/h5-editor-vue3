@@ -1,4 +1,4 @@
-import request from '~/utils/request'
+import request from '@/utils/request'
 
 export const upload = (file: File) => {
   const formData = new FormData()

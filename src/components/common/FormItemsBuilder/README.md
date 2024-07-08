@@ -64,8 +64,8 @@ const fields = ref([
 FormItemsBuilder只生成fields，因此具有极大的灵活性。可以生成任意数量的fields，并自由组合。
 ```html
 <script setup>
-import FormItemsBuilder from '~/components/common/FormItemsBuilder/index.vue'
-import CountrySelectorField from '~/components/common/FormItemsBuilder/demos/CountrySelectorField.vue'
+import FormItemsBuilder from '@/components/common/FormItemsBuilder/index.vue'
+import CountrySelectorField from '@/components/common/FormItemsBuilder/demos/CountrySelectorField.vue'
 
 const data = ref({
   name: 'klose',
@@ -111,8 +111,8 @@ const fields2 = ref([{
 为了让form能正常区分多行数据，正确进行校验，需要配置name-prefix。
 ```html
 <script setup>
-import FormItemsBuilder from '~/components/common/FormItemsBuilder/index.vue'
-import CountrySelectorField from '~/components/common/FormItemsBuilder/demos/CountrySelectorField.vue'
+import FormItemsBuilder from '@/components/common/FormItemsBuilder/index.vue'
+import CountrySelectorField from '@/components/common/FormItemsBuilder/demos/CountrySelectorField.vue'
 
 const data = ref({
   users: [{

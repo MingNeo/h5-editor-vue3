@@ -3,7 +3,7 @@ import Square from '../square/index.vue'
 import Circle from '../circle/index.vue'
 import Text from '../text/index.vue'
 import DesignCompWrapper from './DesignCompWrapper.vue'
-import type { ElementInfo } from '~/types'
+import type { ElementInfo } from '@/types'
 
 const props = defineProps<{
   id: string
