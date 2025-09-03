@@ -334,6 +334,7 @@ declare module 'vue' {
     readonly CURRENCY_AMOUNT_REGEX: UnwrapRef<typeof import('./utils/regexes')['CURRENCY_AMOUNT_REGEX']>
     readonly EMAIL_REGEX: UnwrapRef<typeof import('./utils/regexes')['EMAIL_REGEX']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
+    readonly ElMessage: UnwrapRef<typeof import('element-plus/es')['ElMessage']>
     readonly ID_CARD_REGEX: UnwrapRef<typeof import('./utils/regexes')['ID_CARD_REGEX']>
     readonly LANDLINE_NUMBER_REGEX: UnwrapRef<typeof import('./utils/regexes')['LANDLINE_NUMBER_REGEX']>
     readonly LANDLINE_PHONE_NUMBER_REGEX: UnwrapRef<typeof import('./utils/regexes')['LANDLINE_PHONE_NUMBER_REGEX']>
@@ -651,6 +652,7 @@ declare module '@vue/runtime-core' {
     readonly CURRENCY_AMOUNT_REGEX: UnwrapRef<typeof import('./utils/regexes')['CURRENCY_AMOUNT_REGEX']>
     readonly EMAIL_REGEX: UnwrapRef<typeof import('./utils/regexes')['EMAIL_REGEX']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
+    readonly ElMessage: UnwrapRef<typeof import('element-plus/es')['ElMessage']>
     readonly ID_CARD_REGEX: UnwrapRef<typeof import('./utils/regexes')['ID_CARD_REGEX']>
     readonly LANDLINE_NUMBER_REGEX: UnwrapRef<typeof import('./utils/regexes')['LANDLINE_NUMBER_REGEX']>
     readonly LANDLINE_PHONE_NUMBER_REGEX: UnwrapRef<typeof import('./utils/regexes')['LANDLINE_PHONE_NUMBER_REGEX']>
